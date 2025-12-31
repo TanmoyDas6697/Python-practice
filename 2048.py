@@ -1,9 +1,4 @@
 def compress_and_merge(line):
-    """
-    Takes a list of 4 integers and applies 2048 merge rules
-    in the forward direction.
-    """
-    # Remove zeros
     tiles = [x for x in line if x != 0]
 
     merged = []
@@ -66,7 +61,6 @@ def move_2048(board, direction):
     return new_board
 
 
-# ---------- Input / Output ----------
 board = [list(map(int, input().split())) for _ in range(4)]
 direction = int(input())
 
